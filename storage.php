@@ -7,7 +7,7 @@ use MicrosoftAzure\Storage\Common\Exceptions\ServiceException;
 
 // Configuración
 $connectionString = getenv("AZURE_STORAGE_CONNECTION_STRING");
-$containerName = "comprimidos";  // Cambia esto por el nombre de tu contenedor
+$containerName = "storagecefirecm";  // Cambia esto por el nombre de tu contenedor
 
 $blobClient = BlobRestProxy::createBlobService($connectionString);
 
@@ -53,7 +53,7 @@ try {
 <!DOCTYPE html>
 <html>
 <head>
-    <title>Gestor de archivos ZIP en Azure Blob</title>
+    <title>Gestor de archivos ZIP en mi primer Azure Blob (Cefire CM)</title>
 </head>
 <body>
     <h1>Archivos ZIP en el contenedor '<?= htmlspecialchars($containerName) ?>'</h1>
